@@ -13,6 +13,7 @@ import Packages from "./components/Packages.jsx";
 import AboutUs from "./components/AboutUs.jsx";
 import OurLocation from "./components/OurLocation.jsx";
 import NewsBlogs from "./components/NewsBlogs.jsx";
+import Footer from "./components/Footer.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/OurLocation" element={<OurLocation />} />
         <Route path="/NewsBlogs" element={<NewsBlogs />} />
+        <Route path="/Footer" element={<Footer />} />
 
         
       </Routes>
