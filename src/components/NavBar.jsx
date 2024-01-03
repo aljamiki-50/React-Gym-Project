@@ -20,7 +20,7 @@ function NavBar() {
             </li>
             <li>Location</li>
             <li>News & Blogs</li>
-            <li>About Us</li>
+            <li>  <Link to="/AboutUs"> About Us</Link></li>
             <li>Contact Us</li>
           </ul>
         </div>
