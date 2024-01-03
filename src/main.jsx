@@ -12,6 +12,7 @@ import Services from "./components/Services.jsx";
 import Packages from "./components/Packages.jsx";
 import AboutUs from "./components/AboutUs.jsx";
 import OurLocation from "./components/OurLocation.jsx";
+import NewsBlogs from "./components/NewsBlogs.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/Packages" element={<Packages />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/OurLocation" element={<OurLocation />} />
+        <Route path="/NewsBlogs" element={<NewsBlogs />} />
 
         
       </Routes>

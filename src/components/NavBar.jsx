@@ -18,8 +18,8 @@ function NavBar() {
               {" "}
               <Link to="/Services">plans</Link>
             </li>
-            <li>Location</li>
-            <li>News & Blogs</li>
+            <li>Location</li> 
+            <li>  <Link to="/NewsBlogs"> News & Blogs</Link></li>
             <li>  <Link to="/AboutUs"> About Us</Link></li>
             <li>Contact Us</li>
           </ul>
