@@ -59,7 +59,7 @@ function Nbar() {
   return (
     <div className="  container w-screen    ">
       <div
-        className="   flex flex-row  items-center justify-between  text-center
+        className="   flex flex-row  items-center justify-between   text-center
          "
       >
         <div>
@@ -93,7 +93,8 @@ function Nbar() {
         {!buttonStatus && (
           <li className=" list-none absolute right-2
            gx:right-0 gx:translate-x-12 gx:scale-150 
-           s:scale-[1.8] s:translate-x-5
+           s:right-10 s:translate-x-0  s:scale-125 
+        
            xs:right-20 
            md:right-36   md:scale-[1.8]
             " onClick={swap}>

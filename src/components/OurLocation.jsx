@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "./Button";
 import AboutSwiper from "./AboutSwiper";
 import OurlocationSwiper from "./OurlocationSwiper";
 import { GrLocation } from "react-icons/gr";
 
 function OurLocation() {
-  console.log(history);
   return (
-    <div className=" overflow-hidden box-border container mx-auto
-     s:mt-[20%] s:mb-5
-      ">
+    <div
+      className=" overflow-hidden box-border container mx-auto  
+     s:mt-[20%]
+      "
+    >
       <style>
         {`
           body, html {
@@ -22,20 +23,22 @@ function OurLocation() {
       <div className=" box-border absolute  top-0 left-0  bg-[#1A1A1A] w-screen min-h-screen -z-10"></div>
 
       <div
-        className=" 
-       flex   justify-center text-center align-middle mt-[20%] poppins  antialiased   gap-x-6
-         gx:flex gx:flex-col  gx:gap-x-0 mx-auto gx:gap-y-10
-         s:flex s:flex-col   s:gap-[20%] s:ring-2 s:mt-[10%] s:scale-110 
-         xs:flex xs:flex-col  xs:gap-x-0  xs:gap-y-0 xs:mt-[0%]
+        className={`
+
+        flex   justify-center text-center align-middle mt-[20%] poppins  antialiased   gap-x-6
+         gx:flex gx:flex-col  gx:gap-x-0 mx-auto gx:gap-y-10 gx:mt-0
+         s:flex s:flex-col s:mt-0  
+         xs:flex xs:flex-col  xs:gap-x-0  xs:gap-y-0 xs:mt-[0%] s:gap-y-12
          md:flex md:flex-col  md:gap-x-0  md:gap-y-0 md:mt-[0%]
-       "
+        
+        `}
       >
         <div
           className="
          flex flex-col    text-left mt-6     w-[40%]   poppins
           gx:scale-100    gx:w-full 
-          s:scale-100   s:gap-y-20
-          xs:xscale-100   xs:w-full xs:gap-y-2
+          s:scale-100  s:w-full  s:mt-0 s:gap-y-4
+          xs:xscale-100   xs:w-full xs:gap-y-20 
           md:xscale-100   md:w-full md:gap-y-0 md:mt-2
 
         "
@@ -43,7 +46,7 @@ function OurLocation() {
           <h1
             className=" font-bold text-4xl
             gx:text-3xl
-            s:text-5xl
+            s:text-3xl  s:text-center s:tracking-wider
             xs:text-6xl xs:text-center xs:tracking-wider
             md:text-6xl md:text-center md:tracking-wider
 
@@ -51,13 +54,13 @@ function OurLocation() {
            "
           >
             Our <span className=" xs:hidden"> location </span>
-            <span className=" hidden     gx:flex s:flex justify-center mt-5  text-cyan-400 items-center ">
+            <span className=" hidden     gx:flex s:flex justify-center mt-5 gx:mb-2  text-cyan-400 items-center ">
               <GrLocation />
             </span>
           </h1>
           <p
             className=" w-[70%] antialiased poppins
-           gx:w-[100%] gx:font-base  gx:text-left  gx:leading-0
+           gx:w-[100%] gx:font-base  gx:text-left  gx:leading-0 gx:mb-2
            s:w-[100%]
            xs:w-[100%] xs:font-bold xs:text-center xs:leading-0
            md:w-[70%] md:font-bold md:text-center md:leading-6 md:mt-6 md:mb-4 md:mx-auto
