@@ -35,24 +35,11 @@ function Footer() {
             <li>Sunday - Friday (6 AM - 8 PM)</li>
             <li>Saturday - (6 AM - 2 PM)</li>
             <li className=" fill-transparent  flex gap-x-7">
-              {/* <span> */}
-              <a href="#">
-                {" "}
-                <FaInstagram />
-              </a>
+              {/* <span> */} <FaInstagram />
               {/* </span> */}
-              {/* <span> */}
-              <a href="#">
-                {" "}
-                <FaFacebookF />
-              </a>
+              {/* <span> */} <FaFacebookF />
               {/* </span> */}
-
-              {/* <span> */}
-              <a href="#">
-                {" "}
-                <FaTwitter />
-              </a>
+              {/* <span> */} <FaTwitter />
               {/* </span> */}
             </li>
           </ul>

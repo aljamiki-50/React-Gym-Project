@@ -91,13 +91,16 @@ function Nbar() {
           </ul>
         </div>
         {!buttonStatus && (
-          <li className=" list-none absolute right-2
-           gx:right-0 gx:translate-x-12 gx:scale-150 
+          <li
+            className=" list-none absolute right-2
+           gx:right-20 gx:translate-x-12 gx:scale-150 
            s:right-10 s:translate-x-0  s:scale-125 
         
            xs:right-20 
            md:right-36   md:scale-[1.8]
-            " onClick={swap}>
+            "
+            onClick={swap}
+          >
             {click ? <FaTimes /> : <FaBarsStaggered />}
           </li>
         )}
