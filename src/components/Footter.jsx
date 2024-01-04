@@ -1,15 +1,12 @@
 import React from "react";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6";
 import logo from "../img/logo.png";
-import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa6";
 
-function Footer() {
+function Footter() {
   return (
-    <div
-      id="Footer"
-      className=" bg-[#1A1A1A] absolute bottom-0 w-screen left-0   "
-    >
-      <div className=" grid grid-cols-3    w-[80%] mx-auto text-left  mt-10">
-        <div className=" flex flex-col ring-4 ">
+    <div id="Fotter" className=" box-border   bg-[#1A1A1A]  w-full  ">
+      <div className=" grid grid-cols-3     w-[80%] mx-auto text-left pt-9  mt-10">
+        <div className=" flex flex-col ">
           <h1 className=" text-3xl font-bold Poppins">Pages</h1>
           <ul className=" Poppins flex flex-col ">
             <li>About Us</li>
@@ -31,7 +28,7 @@ function Footer() {
         </div>
         <div className=" flex flex-col text-left gap-y-8">
           <h1 className=" text-3xl font-bold Poppins">Openinnig Times</h1>
-          <ul className=" Poppins flex flex-col ">
+          <ul className=" Poppins flex flex-col gap-y-3 ">
             <li>Sunday - Friday (6 AM - 8 PM)</li>
             <li>Saturday - (6 AM - 2 PM)</li>
             <li className=" fill-transparent  flex gap-x-7">
@@ -58,7 +55,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-between mx-auto   w-[80%] mt-10">
+      <div className="flex justify-between mx-auto  pb-4  w-[80%] mt-10">
         <div>
           <img src={logo} alt="" />
         </div>
@@ -70,4 +67,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footter;

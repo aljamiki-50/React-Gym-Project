@@ -17,11 +17,11 @@ function OurlocationSwiper() {
   const current = imgsize.current ? imgsize.current.width : "100px";
   const currentheight = imgsize.current ? imgsize.current.height : "100px";
 
-  console.log(currentheight);
+  // console.log(currentheight);
 
   return (
     <Swiper
-      className=" text-center"
+      className=" text-center rounded-xl"
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}

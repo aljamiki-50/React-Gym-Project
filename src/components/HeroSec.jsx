@@ -1,9 +1,15 @@
 import React from "react";
 import Button from "./Button";
+// import main from "../img/main-bg.png"
+
 
 function HeroSec() {
   return (
-    <div className=" relative bg   mt-[200px] text-left font-bold antialiased  Poppins   flex flex-col ">
+    <div 
+    // style={{ backgroundImage:URL("./") }}
+     className=" relative    mt-[200px] text-left font-bold antialiased  Poppins   flex flex-col ">
+      {/* <img src={main} alt="" /> */}
+      {/* <div className=" absolute top-0 left-0 bg-slate-200 w-screen h-full -z-10"></div> */}
       <div className="  flex flex-col gap-y-8 text-left ">
         <h1 className=" text-6xl leading-[80px] ">
           <span className=" text-red-600">Experience</span> the Ultimate <br />{" "}
@@ -26,7 +32,6 @@ function HeroSec() {
           />
         </div>
       </div>
-    
     </div>
   );
 }

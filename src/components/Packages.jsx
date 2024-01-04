@@ -5,7 +5,9 @@ import Button from "./Button";
 
 function Packages() {
   return (
-    <div className=" w-screen h-screen bg-[#1A1A1A] absolute top-0 left-0">
+    <div className="mt-10">
+      <div className=" absolute top-0 left-0  bg-[#1A1A1A] w-screen h-full -z-10" />
+
       <div>
         <ExploreText
           p1Style=" roboto text-xl font-bold pb-4 "
@@ -26,7 +28,7 @@ function Packages() {
             <div
               className={`mt-20  flex flex-col gap-y-8 flex-end  w-[70%] text-left ml-10 `}
             >
-              <div> 
+              <div>
                 <div className=" flex  justify-between  w-[120%]  ">
                   <h1 className=" text-2xl mb-3 text-white font-semibold">
                     Day Time Membership :
@@ -38,7 +40,6 @@ function Packages() {
                       hover:bg-[#C1272D] hover:text-white poppins bg-white text-[#C1272D] text-red-500  py-2 px-10  ring-1  text-white ring-black   rounded-3xl     cursor-pointer "
                       children="RECOMMENDED"
                     />
-                   
                   </span>
                 </div>{" "}
                 {/* <p className=" text-xl text-white font-semibold"></p> */}
