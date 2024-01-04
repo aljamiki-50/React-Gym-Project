@@ -18,8 +18,8 @@ function Button({ path, children, type, onClick, btnSize, btnStyle }) {
 
   return (
     <div>
-      <button onClick={onClick} className={`btn   ${checkBtn} `}>
-        <Link to={path}> {children}</Link>
+      <button onClick={onClick} className={`   ${checkBtn} `}>
+        <Link className={`   ${checkBtn} `} to={path}> {children}</Link>
       </button>
     </div>
   );

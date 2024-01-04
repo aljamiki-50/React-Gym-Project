@@ -16,6 +16,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body,
+html {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  box-sizing: border-box;
+}
 
 .roboto {
   font-family: "Roboto", sans-serif;
@@ -50,14 +57,15 @@ a:hover {
   z-index: 10;
 } */
 body {
-  margin: 0;
+  margin: 0  auto;
+  padding: 0%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-  min-height: 100vh;
+  /* min-width: 320px; */
+  /* min-height: 100vh; */
   background-image: url(../src/img/main-bg.png);
   background-size: cover;
-
   background-repeat: no-repeat;
   position: relative;
   z-index: -10;

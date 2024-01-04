@@ -23,6 +23,7 @@ function Layout() {
       <div>
         <Outlet />
       </div>
+      {/* <Footer /> */}
       <Footter />
     </>
   );

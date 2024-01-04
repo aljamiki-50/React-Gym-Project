@@ -21,13 +21,17 @@ function OurlocationSwiper() {
 
   return (
     <Swiper
-      className=" text-center rounded-xl"
+      className=" text-center rounded-xl
+       gx:w-screen
+       xs:overflow-clip
+      "
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
     >
+     
       <SwiperSlide
         style={{ width: `${current}px`, height: `${currentheight}` }}
       >

@@ -57,36 +57,17 @@ function Nbar() {
   ];
 
   return (
-    <div className=" container w-screen   ">
-      <div className="   flex flex-row  items-center justify-between    ">
+    <div className="  container w-screen    ">
+      <div
+        className="   flex flex-row  items-center justify-between  text-center
+         "
+      >
         <div>
           <Link to="/">
             <img src={Logo} alt="" />
           </Link>
         </div>
-        {/* <div  className="ring-4">
-          <ul
-            className="flex    justify-around gap-x-8 text-2xl roboto  font-bold  text-white
-          "
-          >
-            <li>
-              {" "}
-              <Link to="/ServicesLight">plans</Link>
-            </li>
-            <li>
-              <Link to="/OurLocation">Location</Link>
-            </li>
-            <li>
-              {" "}
-              <Link to="/NewsBlogLight"> News & Blogs</Link>
-            </li>
-            <li>
-              {" "}
-              <Link to="/AboutUsLight"> About Us</Link>
-            </li>
-            <li onClick={goToFooter}> Contact Us</li>
-          </ul>
-        </div> */}
+
         <div className="">
           <ul className={` flex items-center  gap-x-3   font-roboto      `}>
             {List.map((li) => (
@@ -110,14 +91,19 @@ function Nbar() {
           </ul>
         </div>
         {!buttonStatus && (
-          <li className=" absolute right-2  " onClick={swap}>
+          <li className=" list-none absolute right-2
+           gx:right-0 gx:translate-x-12 gx:scale-150 
+           s:scale-[1.8] s:translate-x-5
+           xs:right-20 
+           md:right-36   md:scale-[1.8]
+            " onClick={swap}>
             {click ? <FaTimes /> : <FaBarsStaggered />}
           </li>
         )}
         <ul
           className={`${
             click ? "slide-in  " : "slide-out "
-          } absolute  mt-[68px] right-0 top-0 w-[100%] z-20    flex flex-col   gap-y-24 pt-10 bg-black hover:bg-black hover:text-white text-center`}
+          } absolute  mt-[68px] right-0 top-0 w-[100%] z-20    flex flex-col   gap-y-24 pt-10 bg-[#1A1A1A] hover:bg-black hover:text-white text-center`}
           style={{ height: `${height}px` }}
         >
           {List.map((li) => (
