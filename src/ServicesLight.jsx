@@ -8,12 +8,18 @@ import Button from "./components/Button";
 import ExploreText from "./components/ExploreText";
 
 function ServicesLight() {
-
-    // console.log(useLocation().pathname);
+  // console.log(useLocation().pathname);
 
   return (
-    <div className=" w-screen container mt-10  ">
-        <div className=" absolute top-0 left-0 bg-slate-200 w-screen h-full -z-10"></div>
+    <div
+      className=" container w-screen  min-h-screen my-24 
+    gx:grid gx:grid-cols-1 gx:gap-y-3 
+
+     s:grid s:grid-cols-1 s:gap-y-3 
+
+      "
+    >
+      <div className=" absolute top-0 left-0 bg-slate-200 w-screen h-full -z-10"></div>
       <ExploreText
         text1=" Unleash your potential in our state-of-the-art facility, equipped
     with"
@@ -22,7 +28,12 @@ function ServicesLight() {
         h1Style="text-4xl  text-black font-semibold   tracking-wide "
         p1Style="text-black"
       />
-      <div className=" grid  grid-cols-3  gap-x-3 align-center mt-5   ">
+      <div
+        className=" grid  grid-cols-3  gap-x-3 align-center mt-5 
+        gx:grid-cols-1 gx:gap-y-3 
+       s:grid-cols-1 s:gap-y-3 
+        "
+      >
         <Cards
           img={member}
           title="Universal Membership"
@@ -43,12 +54,12 @@ function ServicesLight() {
       </div>
       <Link className=" " to="/Packages">
         <Button
-          btnStyle="bg-[#C1272D] ring-1  text-white ring-black  p-3 rounded xl "
+          btnStyle="bg-[#C1272D]  text-white ring-black font-bold   p-4 mt-2 
+          s:rounded-lg
+           gx:rounded-lg "
           children="Try a Free Trial"
         />
       </Link>
-
-      
     </div>
   );
 }

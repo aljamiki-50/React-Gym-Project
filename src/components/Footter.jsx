@@ -7,13 +7,13 @@ function Footter() {
   return (
     <div
       id="Fotter"
-      className=" box-border   bg-[#1A1A1A]  
+      className=" box-border   bg-[#1A1A1A]        absolute bottom-0  left-0     w-screen text-center    px-4
+ 
         s:hidden gx:hidden
-        
+    
       xs:absolute xs:bottom-0  xs:left-0     xs:w-screen   
       md:absolute md:bottom-0  md:left-0     md:w-screen md:text-center    md:px-10
-      lg:absolute lg:bottom-20  lg:left-0     lg:w-screen lg:text-center    lg:px-4 lg:scale-110
-      absolute bottom-0  left-0     w-screen text-center    px-4
+      lg:absolute lg:bottom-0  lg:left-0     lg:w-screen lg:text-center    lg:px-4 lg:scale-100
 
      "
     >
@@ -82,7 +82,14 @@ function Footter() {
             </span>
             :
           </h1>
-          <ul className=" Poppins flex flex-col xl:gap-y-3 ">
+          <ul
+            className=" Poppins flex flex-col
+             xs:gap-y-2
+             md:gap-y-2
+
+           lg:gap-y-3 
+           xl:gap-y-3 "
+          >
             <li>Sunday - Friday (6 AM - 8 PM)</li>
             <li>Saturday - (6 AM - 2 PM)</li>
             <li className=" fill-transparent  flex gap-x-7">

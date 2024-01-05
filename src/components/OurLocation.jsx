@@ -7,11 +7,13 @@ import { GrLocation } from "react-icons/gr";
 function OurLocation() {
   return (
     <div
-      className=" overflow-hidden box-border container mx-auto
+      className="  box-border container mx-auto   min-h-screen
      s:mt-[20%]
+      xl:mt-[10%]
+     xl:my-10
       "
     >
-      <style>
+      {/* <style>
         {`
           body, html {
             margin: 0 auto;
@@ -19,7 +21,7 @@ function OurLocation() {
             height: 100%;
           }
         `}
-      </style>
+      </style> */}
       <div className=" box-border absolute  top-0 left-0  bg-[#1A1A1A] w-screen min-h-screen -z-10"></div>
 
       <div

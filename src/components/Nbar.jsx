@@ -57,7 +57,7 @@ function Nbar() {
   ];
 
   return (
-    <div className="   container w-screen  lg:fixed xl:fixed   lg:mt-6    z-10 top-0  
+    <div className="   container w-screen  lg:fixed xl:fixed   lg:mt-6    xl:z-20 top-0  
       xl:mt-10
        ">
       <div
