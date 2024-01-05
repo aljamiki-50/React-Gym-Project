@@ -81,6 +81,18 @@ body::before {
   left: 0;
   background: rgba(0, 0, 0, 0.3);
 }
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.scrollbar-hide {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
 
 .slide-in {
   transition: transform 0.8s ease-in-out;

@@ -23,7 +23,7 @@ function Nbar() {
   function btnOff() {
     if (window.innerWidth <= 960) {
       setButtonStatus(false);
-      console.log(window.innerWidth);
+      // console.log(window.innerWidth);
     } else {
       setButtonStatus(true);
       // console.log("it's been set to true");
@@ -57,9 +57,11 @@ function Nbar() {
   ];
 
   return (
-    <div className="  container w-screen    ">
+    <div className="   container w-screen  lg:fixed xl:fixed   lg:mt-6    z-10 top-0  
+      xl:mt-10
+       ">
       <div
-        className="   flex flex-row  items-center justify-between   text-center
+        className="    flex flex-row  items-center justify-between   text-center
          "
       >
         <div>
@@ -76,18 +78,12 @@ function Nbar() {
                   <LinksNbar
                     children={li.name}
                     path={li.path}
-                    btnStyle="btn-dark"
+                    btnStyle="bg-white p-4 rounded-xl font-bold Poppins hover:text-slate-300"
                     onClick={closeMobileMenue}
                   />
                 )}
               </Link>
             ))}
-            {/* {button && (
-              <Button
-                btnStyle="btn btn-light    hover:text-white  hover:bg-black font-roboto fs-3 fw-meduim"
-                children="Sign-Up"
-              />
-            )} */}
           </ul>
         </div>
         {!buttonStatus && (

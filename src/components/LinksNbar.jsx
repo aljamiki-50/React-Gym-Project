@@ -16,7 +16,7 @@ function LinksNbar({ path, children, type, onClick, btnSize, btnStyle }) {
   const checkBtn = styles.includes(btnStyle) ? btnStyle : styles[1];
 
   return (
-    <Link to={path} className={`btn ${checkBtn}`} onClick={onClick}>
+    <Link to={path} className={` ${checkBtn}`} onClick={onClick}>
       {children}
     </Link>
   );
