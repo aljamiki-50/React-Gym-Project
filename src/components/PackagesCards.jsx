@@ -22,33 +22,72 @@ function PackagesCards({ other, title, width, bg }) {
   return (
     <div
       // style={{ width: widthsize }}
-      className={` text-white  rounded-xl   w-[334px] ${divDec}      flex flex-col gap-y-7 bg-[#FFFFFF]
+      className={` text-white  rounded-xl    w-[334px] ${divDec}     flex flex-col gap-y-7 bg-[#FFFFFF]
+
+       xs:w-[100%] xs:flex-col    xs:align-top 
+       md:w-[100%] md:flex-col    md:align-top 
+       lg:w-[100%] lg:flex-col    lg:align-top 
+
+
+      
+      
+     
+      
+
+
+       
+
+
+       
     `}
     >
       <div
-        className={`mt-20  flex flex-col gap-y-4 flex-end   text-left ml-10 `}
+        className={`mt-20  flex flex-col gap-y-4 flex-end   text-left ml-10
+         s:text-center  s:ml-0 
+          xs:flex-row xs:align-center 
+          md:flex-row md:align-center 
+
+          lg:flex-row lg:align-center 
+
+         
+         
+         `}
       >
         <div>
-          <div className="">
-            <h1 className=" text-4xl mb-3 text-black font-semibold">
+          <div className=" hidden">
+            <h1 className=" text-4xl mb-3 text-black font-semibold
+             s
+            ">
               {title}{" "}
             </h1>
             <span>{other}</span>
           </div>{" "}
           <p className="   text-black text-3xl font-bold tracking-wide">
-            Regular :
+          Regular {title} :
           </p>
           <p className="  text-black font-bold ">Regular Membership :</p>
         </div>
 
-        <ul className=" flex   flex-col text-xl text-black gap-4">
+        <ul className=" flex   flex-col text-xl text-black gap-4
+         xs:flex-row
+         md:flex-row
+         lg:flex-row
+        ">
           <li>Gym</li>
           <li>Gym & Cardio</li>
           <li>Gym</li>
         </ul>
       </div>
       <Button
-        btnStyle="hover:bg-[#C1272D] hover:text-white bg-[#C1272D]/10 text-[#C1272D] text-red-500 px-14 py-2 ring-1  text-white ring-black   rounded     cursor-pointer "
+        btnStyle="hover:bg-[#C1272D] hover:font-extrabold hover:text-cyan-400 bg-[#C1272D] text-[#C1272D]  px-10 py-4 
+            rounded-xl font-bold  text-white ring-black        cursor-pointer
+            s:mb-16 
+            xs:py-3 xs:mb-10 xs:px-8
+            md:py-3 md:mb-10 md:px-8
+            lg:py-3 lg:mb-10 lg:px-8
+          
+           
+             "
         children="Start a Free Trial"
       />{" "}
     </div>

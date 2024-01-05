@@ -18,7 +18,10 @@ function ExploreText({ p1Style, h1Style, text1, text2, title }) {
 
   return (
     <div>
-      <div className="  flex flex-col gap-y-4 Poppins">
+      <div className="  flex flex-col gap-y-4 Poppins
+       s:mx-auto
+       xs:mx-auto
+      ">
         <h1
           className={`  ${h1Style} `}
           // className="  "

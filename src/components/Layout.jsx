@@ -25,7 +25,7 @@ function Layout() {
       </div>
       {/* <Footer /> */}
       <Footter />
-    </>
+     </>
   );
 }
 

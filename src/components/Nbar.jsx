@@ -92,7 +92,7 @@ function Nbar() {
            gx:right-20 gx:translate-x-12 gx:scale-150 
            s:right-10 s:translate-x-0  s:scale-125 
         
-           xs:right-20 
+           xs:right-20  xs:scale-150
            md:right-36   md:scale-[1.8]
             "
             onClick={swap}

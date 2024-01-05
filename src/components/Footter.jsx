@@ -9,19 +9,20 @@ function Footter() {
       id="Fotter"
       className=" box-border   bg-[#1A1A1A]  
         s:hidden gx:hidden
-      xs:absolute xs:bottom-0  xs:left-0     xs:w-screen  xs:scale-[0.96]
-      md:absolute md:bottom-0  md:left-0     md:w-screen md:text-center  md:scale-[0.96]  md:px-4
-      lg:absolute lg:bottom-40  lg:left-0     lg:w-screen lg:text-center    lg:px-4 lg:scale-110
+        
+      xs:absolute xs:bottom-0  xs:left-0     xs:w-screen   
+      md:absolute md:bottom-0  md:left-0     md:w-screen md:text-center    md:px-10
+      lg:absolute lg:bottom-20  lg:left-0     lg:w-screen lg:text-center    lg:px-4 lg:scale-110
       absolute bottom-0  left-0     w-screen text-center    px-4
 
      "
     >
       <div
         className="
-       grid grid-cols-3     w-[80%] mx-auto text-left pt-9  mt-10
+       grid grid-cols-3     w-[80%] mx-auto text-left pt-9  mt-10 
         xs:mt-0 xs:h-[260px]   items-stretch
          xs:flex xs:justify-around xs:gap-x-10  xs:mx-auto  xs:scale-90 xs:text-lg  xs:pt-10
-         md:flex md:justify-around md:gap-x-10  md:mt-14 md:mx-auto  md:scale-125 md:text-lg 
+         md:flex md:justify-around md:gap-x-10  md:mt-0 md:mx-auto  md:scale-100 md:text-lg 
        
       "
       >
@@ -36,7 +37,7 @@ function Footter() {
            xs:grid xs:grid-cols-1 xs:items-start xs:gap-y-3 
            md:grid md:grid-cols-1 md:items-start md:gap-y-3
            lg:grid lg:grid-cols-1 lg:items-start lg:gap-y-3   
-  
+           xl:gap-y-3
 
            "
           >
@@ -55,7 +56,8 @@ function Footter() {
             className=" Poppins flex flex-col
            xs:grid xs:grid-cols-1 xs:items-start   xs:gap-y-3 
            md:grid md:grid-cols-1 md:items-start md:gap-y-3   
-           lg:grid lg:grid-cols-1 lg:items-start lg:gap-y-3   
+           lg:grid lg:grid-cols-1 lg:items-start lg:gap-y-3 
+           xl:gap-y-3  
            "
           >
             <li>About Us</li>
@@ -67,30 +69,25 @@ function Footter() {
         </div>
 
         <div className=" flex flex-col text-left gap-y-8">
-          <h1 className=" md:flex  md:gap-x-5 
-          xs:flex  xs:gap-x-5 
-          items-center text-center  align-middle  text-3xl font-bold Poppins  xs:text-lg md:text-2xl">
-           <span> Working </span>
+          <h1
+            className="  flex gap-x-2     items-center text-center  align-middle  text-3xl font-bold Poppins 
+        
+          xs:flex  xs:gap-x-5   xs:text-lg 
+          md:text-2xl  md:flex  md:gap-x-5 
+          "
+          >
+            <span> Working </span>
             <span className="  text-red-500 animate-pulse">
               <BsClock />
             </span>
-            
+            :
           </h1>
-          <ul className=" Poppins flex flex-col gap-y-3 ">
+          <ul className=" Poppins flex flex-col xl:gap-y-3 ">
             <li>Sunday - Friday (6 AM - 8 PM)</li>
             <li>Saturday - (6 AM - 2 PM)</li>
             <li className=" fill-transparent  flex gap-x-7">
-                {" "}
-                <FaInstagram />
-              
-
-                {" "}
-                <FaFacebookF />
-              
-
-                {" "}
-                <FaTwitter />
-              
+              {" "}
+              <FaInstagram /> <FaFacebookF /> <FaTwitter />
             </li>
           </ul>
         </div>
