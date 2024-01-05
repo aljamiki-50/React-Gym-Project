@@ -10,8 +10,10 @@ import AboutSwiper from "./AboutSwiper";
 function AboutUsLight() {
   return (
     <div
-      className="container w-screen  min-h-screen my-24
-      lg:mb-96  lg:mt-[4%] 
+      className="
+    container w-screen  min-h-screen my-24
+    gx:w-screen
+    lg:mb-96  lg:mt-[4%] 
     xl:mb-96  xl:mt-[4%] 
         "
     >
@@ -22,10 +24,13 @@ function AboutUsLight() {
         <div>
           <ExploreText
             p1Style=" roboto text-lg font-bold pb-4 text-[#426666] w-[50%] grid  mx-auto
+            gx:w-full gx:text-left gx:text-wrap gx:font-semibold
+
              s:w-full s:text-left s:text-wrap s:font-semibold
               xs:text-wrap xs:font-semibold
              "
             h1Style="text-4xl mt-10  text-black poppins font-bold    tracking-wide
+            gx:w-full gx:text-left gx:text-wrap 
             s:w-full s:text-left s:text-wrap 
             xs:w-full xs:text-wrap 
             "

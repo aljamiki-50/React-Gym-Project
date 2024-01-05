@@ -29,13 +29,15 @@ function Video() {
     }
   };
   return (
-    <div className="  ring-[1px] ring-slate-100 ">
-      <div className="app__video  relative container mx-auto
-       s:text-center        gx:text-center
+    <div className="  ring-[1px] ring-slate-100  ">
+      <div className="app__video  relative  mx-auto 
+       s:text-center    gx:text-center
 
         ">
         <video
-          className=" object-cover  container w-full
+          className=" object-cover
+           lg:w-screen lg:container
+           xl:w-screen xl:h-screen  
 
             "
           src={vid}
