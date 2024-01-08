@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../img/logo.png";
+import bob from "../img/bob.jpg";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import LinksNbar from "./LinksNbar";
@@ -67,7 +68,7 @@ function DarNavBar() {
       >
         <div>
           <Link to="/">
-            <img src={Logo} alt="" />
+          <img src={bob} className=" w-[80px] h-[80px] ring-2 ring-white  rounded-[100%] object-fit  text-center "   alt="" />
           </Link>
         </div>
 

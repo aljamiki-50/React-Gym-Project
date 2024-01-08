@@ -22,6 +22,9 @@ import TestLight from "./testlight.jsx";
 import ServicesLight from "./ServicesLight.jsx";
 import NewsBlogLight from "./NewsBlogLight.jsx";
 import AboutUsLight from "./components/AboutUsLight.jsx";
+import Prices from "./components/prices.jsx";
+import Trainer from "./components/Trainer.jsx";
+import Practioners from "./Practioners.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -39,6 +42,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
         <Route element={<Layout />}>
           {/* <Route path=":test" element={<Test/>}/> */}
+          <Route path="/price" element={<Prices />} />
+          <Route path="/Trainer" element={<Trainer />} />
+          <Route path="/Practioners" element={<Practioners />} />
           <Route path="/ServicesLight" element={<ServicesLight />} />
           <Route path="/NewsBlogLight" element={<NewsBlogLight />} />
           <Route path="/AboutUsLight" element={<AboutUsLight />} />

@@ -26,6 +26,8 @@ function Packages() {
         />
       </div>
 
+      
+
       <div className=" ">
         <div
           className=" flex gap-10 justify-center
@@ -40,10 +42,11 @@ function Packages() {
         >
           
           <PackagesCards />
+          
           <div
             // style=
             className=" text-white    rounded-xl poppins    h-[434px]  w-[703px]      flex flex-col gap-y-7 bg-[#303030] 
-                       s:w-[334px]   s:justify-center s:text-center s:h-[534px] s:mx-auto  s:container
+                       s:w-[334px]   s:justify-center s:text-center s:h-[534px] s:mx-auto  s:container 
       "
           >
             <div

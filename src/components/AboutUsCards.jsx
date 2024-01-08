@@ -1,8 +1,11 @@
 import React from "react";
 import Logo from "../img/logo.png";
 import trainer from "../img/trainer.png";
+import bob from "../img/bob.jpg";
 
-function AboutUsCards() {
+function AboutUsCards({name,review,rating,image,role}) {
+  
+
   return (
     <div
       className=" 
@@ -16,6 +19,15 @@ function AboutUsCards() {
 
       "
     >
+      {/* {Reviews.map((Rev,index)=>(   ))} */}
+
+      <div className="       flex  justify-center ring-1/50   ring-black mx-24  gap-x-3  align-middle  text-center 
+      gx:flex-col-reverse gx:mx-0 gx:gap-x-0   
+      s:flex-col-reverse s:mx-0 s:gap-x-0
+     xs:flex-row-reverse  xs:mx-0 xs:gap-x-0
+     md:flex-row-reverse  md:mx-0 md:gap-x-0 md:items-center md:mb-4
+     lg:flex-row-reverse  lg:mx-0 lg:gap-x-0 lg:items-center lg:mb-4
+" >
       <div
         className="  text-left pl-10 flex flex-col gap-y-10 w-[30%]
         gx:w-[100%] gx:items-left gx:gap-y-5 gx:mt-4
@@ -30,7 +42,7 @@ function AboutUsCards() {
       >
         {/* <div className="   "> */}
         <img
-          src={Logo}
+          src={bob}
           className="  bg-black  w-20 h-20 object-contain  rounded-[1000%]  mt-10 ring-1 
           gx:order-3
           md:order-3
@@ -42,19 +54,17 @@ function AboutUsCards() {
 
         {/* </div> */}
         <p
-          className=" w-[80%] text-[#6D6D6D]
+          className=" w-[80%] text-[#6D6D6D] Poppins antialiased font-bold
         gx:w-[110%] gx:text-lg gx:font-semibold gx:tracking-tide 
         s:w-full s:text-lg s:font-bold s:tracking-wide
         xs:w-full xs:text-lg xs:font-bold xs:tracking-wide
         gx:order-2
         md:order-2
         lg:order-2
+        xl:w-full 
 
          "
-        >
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis no.
+        >{review}
         </p>
         <div
           className="
@@ -74,15 +84,21 @@ function AboutUsCards() {
         "
         >
           <h1 className=" text-black poppins font-bold text-2xl  ">
-            Sara Thompson
+            {name}
           </h1>
           <p className=" poppins font-bold text-xl text-[#6D6D6D]">
-            Athletics, Trainer
+           {role}
           </p>
         </div>
       </div>
+
       <div className=" gx:w-full s:w-full xs:w-full md:w-full lg:w-full ">
-        <img src={trainer} className=" gx:w-full s:w-full xs:w-full  md:w-full  lg:w-full" alt="" />
+        <img
+          src={trainer}
+          className=" gx:w-full s:w-full xs:w-full  md:w-full  lg:w-full"
+          alt=""
+        />
+      </div>
       </div>
     </div>
   );

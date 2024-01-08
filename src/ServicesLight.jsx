@@ -38,11 +38,14 @@ function ServicesLight() {
           img={member}
           title="Universal Membership"
           p="1 Membership 5 gyms, with a single membership you can train at all of our branches as your prefer."
+          link="/price"
+          
         />
         <Cards
           img={trainers}
-          title="Customized Training"
+          title="Specialist Practitioner"
           p="We provide a fully customized nutrition and training program according to your personal goals."
+          link="/Practioners"
         />
         <Cards
           img={certifcate}
@@ -50,6 +53,7 @@ function ServicesLight() {
           p="Bring to the table win survival
        strategies ensure proactive
        new domination.."
+       link="/Trainer"
         />
       </div>
       <Link className=" " to="/Packages">
