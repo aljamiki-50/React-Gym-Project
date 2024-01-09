@@ -14,7 +14,7 @@ function AboutUsLight() {
     container w-screen  min-h-screen my-24
     gx:w-screen
     lg:mb-96  lg:mt-[4%] 
-    xl:mb-96  xl:mt-[6%] 
+    xl:mb-96  xl:mt-[12%]  
         "
     >
       <div className=" absolute top-0 left-0 bg-slate-200 w-screen min-h-full -z-10"></div>

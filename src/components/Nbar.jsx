@@ -51,7 +51,7 @@ function Nbar() {
     { name: "Location", path: "/OurLocation" },
     { name: "News & Blogs", path: "/NewsBlogLight" },
     { name: " About Us", path: "/AboutUsLight" },
-    { name: "Contact Us", path: "Contact Us" },
+    { name: "Barber Shop", path: "/BareberShop" },
     // { name: "News & Blogs", path: "Products" },
     // { name: "News & Blogs", path: "Products" },
     // { name: "User", path: "/User" },

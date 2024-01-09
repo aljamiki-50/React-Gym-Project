@@ -15,7 +15,7 @@ function NewsBlogLight() {
     xs:my-32  
      md:my-32 
     lg:my-28   
-    xl:mb-96  xl:mt-[4%]      "
+    xl:mb-96  xl:mt-[8%]      "
     >
       <div className=" absolute top-0 left-0 bg-slate-200 w-screen h-full -z-10"></div>
 

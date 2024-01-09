@@ -47,7 +47,7 @@ function DarNavBar() {
     { name: "Location", path: "/OurLocation" },
     { name: "News & Blogs", path: "/NewsBlogLight" },
     { name: " About Us", path: "/AboutUsLight" },
-    { name: "Contact Us", path: "Contact Us" },
+    { name: "Barber Shop", path: "/BareberShop" },
     // { name: "News & Blogs", path: "Products" },
     // { name: "News & Blogs", path: "Products" },
     // { name: "User", path: "/User" },
@@ -68,7 +68,11 @@ function DarNavBar() {
       >
         <div>
           <Link to="/">
-          <img src={bob} className=" w-[80px] h-[80px] ring-2 ring-white  rounded-[100%] object-fit  text-center "   alt="" />
+            <img
+              src={bob}
+              className=" w-[80px] h-[80px] ring-2 ring-white  rounded-[100%] object-fit  text-center "
+              alt=""
+            />
           </Link>
         </div>
 
