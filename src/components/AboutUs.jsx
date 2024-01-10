@@ -1,7 +1,5 @@
 import React from "react";
 import ExploreText from "./ExploreText";
-import Logo from "../img/Logo.png";
-import trainer from "../img/trainer.png";
 import AboutSwiper from "./AboutSwiper";
 import AboutUsCards from "./AboutUsCards";
 
@@ -18,12 +16,6 @@ function AboutUs() {
             title="Happy Clients"
           />
         </div>
-        {/* <div>
-
-        <AboutUsCards />
-
-            
-        </div> */}
         <div className="    text-black">
           <h1>
             <AboutSwiper />

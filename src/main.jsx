@@ -11,7 +11,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Services from "./components/Services.jsx";
 import Packages from "./components/Packages.jsx";
-import AboutUs from "./components/AboutUs.jsx";
 import OurLocation from "./components/OurLocation.jsx";
 import NewsBlogs from "./components/NewsBlogs.jsx";
 import Footer from "./components/Footer.jsx";
