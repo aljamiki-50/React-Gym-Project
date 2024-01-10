@@ -117,13 +117,7 @@ function Nbar() {
               />
             </Link>
           ))}
-          {/* <li>
-            <Button
-              btnStyle="btn btn-light  hover:text-white  hover:bg-black font-roboto fs-3 fw-meduim"
-              children="Sign-Up"
-              onClick={closeMobileMenue}
-            />
-          </li> */}
+          
         </ul>
       </div>
     </div>
