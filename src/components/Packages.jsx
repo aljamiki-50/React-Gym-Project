@@ -4,17 +4,34 @@ import PackagesCards from "./PackagesCards";
 import Button from "./Button";
 
 function Packages() {
+  const goBackAndLog = () => {
+    const previousIndex = window.history.length - 2;
+    if (previousIndex >= 0) {
+      window.history.go(-1); // Navigate back one step
+      const previousPathname = window.history[previousIndex].pathname;
+      console.log("Previous pathname:", previousPathname);
+    }
+  };
+
+   console.log( window.history.path);
+
   return (
     <div
       className=" container w-screen  min-h-screen mt-24
     xs:mt-0
     md:mt-0
     xs:mb-32 
-     xl:mb-32 
+     xl:mb-[300px] 
      
      "
     >
       {/* <div className=" absolute top-0 left-0  bg-[#1A1A1A] w-screen h-screen -z-10" /> */}
+
+      <div className=" ring-4 p-5">
+        <button onClick={goBackAndLog}>Go Back and Log</button>
+      </div>
+
+      {/*  */}
 
       <div>
         <ExploreText
@@ -25,8 +42,6 @@ function Packages() {
           title="Packages and Pricing"
         />
       </div>
-
-      
 
       <div className=" ">
         <div
@@ -40,9 +55,8 @@ function Packages() {
 
           "
         >
-          
           <PackagesCards />
-          
+
           <div
             // style=
             className=" text-white    rounded-xl poppins    h-[434px]  w-[703px]      flex flex-col gap-y-7 bg-[#303030] 
@@ -73,6 +87,7 @@ function Packages() {
                       btnStyle="
                       hover:bg-[#C1272D] hover:text-cyan-400 poppins bg-[#C1272D] text-[#C1272D] text-red-500  py-3   px-10 s:px-6    text-white ring-black   rounded-3xl     cursor-pointer "
                       children="RECOMMENDED"
+                      path="/price"
                     />
                   </span>
                 </div>{" "}
@@ -104,6 +119,7 @@ function Packages() {
 
                 "
               children="Choose plan ($200)"
+              path="/price"
             />
           </div>
         </div>

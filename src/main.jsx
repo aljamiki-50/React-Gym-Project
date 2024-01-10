@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createRoot } from "react-dom/client";
 
+
 // import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -26,6 +27,12 @@ import Prices from "./components/prices.jsx";
 import Trainer from "./components/Trainer.jsx";
 import Practioners from "./Practioners.jsx";
 import BareberShop from "./components/BareberShop.jsx";
+import Bshoplayout from "./components/Bshoplayout.jsx";
+import BshopFindus from "./components/BshopFindus.jsx";
+import BshopServices from "./components/BshopServices.jsx";
+import BshopAboutUs from "./components/BshopAboutUs.jsx";
+import Bshop from "./components/Bshop.jsx";
+import BshopBlog from "./BshopBlog.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -40,11 +47,21 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         {/* <Route path="/Footer" element={<Footer />} /> */}
 
         <Route path="/" element={<App />} />
+        <Route path="/BareberShop" element={<BareberShop />} />
+
+        <Route element={<Bshoplayout />}>
+          <Route path="/BareberShop" element={<BareberShop />} />
+          <Route path="/BshopFindus" element={<BshopFindus />} />
+          <Route path="/BshopServices" element={<BshopServices />} />
+          <Route path="/BshopAboutUs" element={<BshopAboutUs />} />
+          <Route path="/Bshop" element={<Bshop />} />
+          <Route path="/BshopBlog" element={<BshopBlog/>} />
+        </Route>
 
         <Route element={<Layout />}>
           {/* <Route path=":test" element={<Test/>}/> */}
           <Route path="/price" element={<Prices />} />
-          <Route path="/BareberShop" element={<BareberShop />} />
+          {/* <Route path="/BareberShop" element={<BareberShop />} /> */}
           <Route path="/Trainer" element={<Trainer />} />
           <Route path="/Practioners" element={<Practioners />} />
           <Route path="/ServicesLight" element={<ServicesLight />} />

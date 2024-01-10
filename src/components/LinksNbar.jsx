@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function LinksNbar({ path, children, type, onClick, btnSize, btnStyle }) {
+function LinksNbar({key, path, children, type, onClick, btnSize, btnStyle }) {
   const styles = [
     "btn-primary",
     "btn-danger",
@@ -16,7 +16,7 @@ function LinksNbar({ path, children, type, onClick, btnSize, btnStyle }) {
   const checkBtn = styles.includes(btnStyle) ? btnStyle : styles[1];
 
   return (
-    <Link to={path} className={` ${checkBtn}`} onClick={onClick}>
+    <Link key={key} to={path} className={` ${checkBtn}`} onClick={onClick}>
       {children}
     </Link>
   );

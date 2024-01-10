@@ -12,14 +12,15 @@ function ServicesLight() {
 
   return (
     <div
-      className=" container w-screen  min-h-screen my-24 
+      className=" container w-screen  min-h-screen my-24  
     gx:grid gx:grid-cols-1 gx:gap-y-3 
-
      s:grid s:grid-cols-1 s:gap-y-3 
+      lg:mb-[400px] lg:mt-[12%]
+      xl:my-40
 
       "
     >
-      <div className=" absolute top-0 left-0 bg-slate-200 w-screen h-full -z-10"></div>
+      <div className=" absolute top-0 left-0 bg-slate-200 w-screen h-full -z-10" />
       <ExploreText
         text1=" Unleash your potential in our state-of-the-art facility, equipped
     with"
@@ -39,7 +40,6 @@ function ServicesLight() {
           title="Universal Membership"
           p="1 Membership 5 gyms, with a single membership you can train at all of our branches as your prefer."
           link="/price"
-          
         />
         <Cards
           img={trainers}
@@ -53,7 +53,7 @@ function ServicesLight() {
           p="Bring to the table win survival
        strategies ensure proactive
        new domination.."
-       link="/Trainer"
+          link="/Trainer"
         />
       </div>
       <Link className=" " to="/Packages">
@@ -64,6 +64,9 @@ function ServicesLight() {
           children="Try a Free Trial"
         />
       </Link>
+       <div className=" s:hidden gx:hidden rounded-xl w-full p-[30%] m-10 mx-auto bg-cyan-800/50 ">
+        <h1 className=" text-4xl font-bold">An offer or  a Promo sec here </h1>
+       </div>
     </div>
   );
 }

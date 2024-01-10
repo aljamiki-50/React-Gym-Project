@@ -16,9 +16,10 @@ function BarberCard({ Image, Name }) {
           "
     >
       {" "}
-      <div className=" xl:flex   xl:justify-evenly xl:items-center">
+      <div className="  p
+      xl:flex   xl:justify-evenly xl:items-center">
         {" "}
-        <p className="w-[40%] hidden xl:flex ">
+        <p className="w-[40%] hidden xl:flex  xl:font-bold xl:text-justify  ">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
           commodi hic, rerum beatae dolores consequuntur laboriosam molestias
           adipisci debitis nemo, accusamus sint magni delectus vero, sequi animi commodi hic, rerum beatae dolores consequuntur laboriosam molestias
@@ -26,7 +27,7 @@ function BarberCard({ Image, Name }) {
           adipisci debitis nemo, accusamus sint magni delectus vero, sequi animi
           corporis eius unde.
         </p>
-        <img src={Image} alt="" className="xl:w-[20%] w-[100%]rounded-xl" />
+        <img src={Image} alt="" className="xl:w-[20%] rounded-xl" />
       </div>
       <h1 className=" text-2xl font-bold"> {Name}</h1>
       <Button

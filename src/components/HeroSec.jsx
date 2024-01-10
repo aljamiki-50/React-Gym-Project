@@ -10,24 +10,23 @@ function HeroSec() {
       className="  
         flex flex-col items-center  scrollbar-hide   overflow-y-auto scroll-smooth   w-screen min-h-screen   text-center font-bold antialiased  Poppins mt-12 
         gx:gap-y-10 gx:mt-20 gx:w-full  gx:flex-grow-1  gx:mx-auto gx:container
-        s:gap-y-10 s:mt-20 s:w-full  s:flex-grow-1  s:mx-auto s:container
+        s:gap-y-10 s:mt-[25%] s:w-full  s:flex-grow-1  s:mx-auto s:container
        xs:gap-y-10 xs:mt-20 xs:w-full  xs:flex-grow-1  xs:mx-auto xs:container
        md:gap-y-10 md:mt-20 md:w-full  md:flex-grow-1  md:mx-auto md:container
        lg:gap-y-10 lg:mt-20 lg:w-full  lg:flex-grow-1  lg:mx-auto lg:container 
-       xl:gap-y-10  xl:my-40 xl:mt-2 xl:min-h-screen-auto xl:min-h-0
+       xl:gap-y-10  xl:my-40 xl:mt-2 xl:min-h-screen-auto xl:min-h-0 
       
       "
     >
       <div
-        className="     w-screen px-28  mx-auto text-center  min-h-screen   absolute top-0 left-0  flex-inline
+        className="     w-screen px-28  mx-auto text-center  min-h-screen   absolute top-2 left-0   flex-inline
         
         gx:px-0  gx:w-screen gx:mx-auto gx:grid gx:grid-cols-1 gx:mt-28 
-        s:px-0  s:w-screen s:mx-auto s:grid s:grid-cols-1 s:mt-28 
+        s:px-0  s:w-screen s:mx-auto s:grid s:grid-cols-1 s:mt-28  s:top-5
         xs:px-0  xs:w-screen xs:mx-auto xs:grid xs:grid-cols-1 xs:mt-32 
         md:px-0  md:w-screen md:mx-auto md:grid md:grid-cols-1 md:mt-32 
         lg:px-0  lg:w-screen lg:mx-auto lg:grid lg:grid-cols-1 lg:mt-32 
-
-       xl:flex xl:flex-col   xl:px-0  xl:w-screen xl:mx-0   
+        xl:flex xl:flex-col   xl:px-0  xl:w-screen xl:mx-0   
 "
       >
         <div

@@ -9,6 +9,7 @@ function OurLocation() {
     <div
       className="  box-border container mx-auto   min-h-screen
      s:mt-[20%]
+     lg:mt-[10%]
       xl:mt-[10%]
      xl:my-10
       "
@@ -22,7 +23,7 @@ function OurLocation() {
           }
         `}
       </style> */}
-      <div className=" box-border absolute  top-0 left-0  bg-[#1A1A1A] w-screen min-h-screen -z-10"></div>
+      <div className=" box-border absolute  top-0 left-0  bg-[#1A1A1A] w-screen min-h-full -z-10"></div>
 
       <div
         className={`
@@ -32,7 +33,8 @@ function OurLocation() {
          s:flex s:flex-col s:mt-0  
          xs:flex xs:flex-col  xs:gap-x-0  xs:gap-y-0 xs:mt-[0%] 
          md:flex md:flex-col  md:gap-x-0  md:gap-y-0 md:mt-[0%]
-           lg:items-center lg:gap-x-10 lg:mt-0 lg:scale-90
+           lg:gap-x-10 lg:mt-0 lg:scale-100    lg:translate-y-[300px]
+
           
         
         `}
@@ -44,6 +46,7 @@ function OurLocation() {
           s:scale-100  s:w-full  s:mt-0 s:gap-y-4
           xs:xscale100 xs:w-full xs:gap-y-0
           md:xscale-100   md:w-full md:gap-y-0 md:mt-2 
+          lg:scale-100   lg:w-full lg:gap-y-0 lg:mt-2 
         
 
 

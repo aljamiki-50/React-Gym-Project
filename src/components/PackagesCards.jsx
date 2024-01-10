@@ -15,12 +15,15 @@ function PackagesCards({ other, title, width, bg }) {
     bg,
   ];
 
+
   const widthsize = styles.includes(width) ? width : styles[1];
   const divDec = styles.includes(bg) ? bg : styles[6];
   // console.log(widthsize);
 
   return (
+    
     <div
+    
       // style={{ width: widthsize }}
       className={` text-white  rounded-xl    w-[334px] ${divDec}     flex flex-col gap-y-7 bg-[#FFFFFF]
 
@@ -79,7 +82,7 @@ function PackagesCards({ other, title, width, bg }) {
         </ul>
       </div>
       <Button
-        btnStyle="hover:bg-[#C1272D] hover:font-extrabold hover:text-cyan-400 bg-[#C1272D] text-[#C1272D]  px-10 py-4 
+        btnStyle="hover:bg-[#C1272D] hover:font-extrabold hover:text-cyan-400 bg-[#C1272D] text-[#C1272D]  px-10 py-4  Popins font-bold
             rounded-xl font-bold  text-white ring-black        cursor-pointer
             s:mb-16 
             xs:py-3 xs:mb-10 xs:px-8
@@ -89,6 +92,7 @@ function PackagesCards({ other, title, width, bg }) {
            
              "
         children="Start a Free Trial"
+        path="/price"
       />{" "}
     </div>
   );

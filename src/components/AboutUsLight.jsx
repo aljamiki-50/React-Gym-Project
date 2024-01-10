@@ -13,7 +13,7 @@ function AboutUsLight() {
       className="
     container w-screen  min-h-screen my-24
     gx:w-screen
-    lg:mb-96  lg:mt-[4%] 
+    lg:mb-96  lg:mt-[10%] 
     xl:mb-96  xl:mt-[12%]  
         "
     >
@@ -34,7 +34,7 @@ function AboutUsLight() {
             s:w-full s:text-left s:text-wrap 
             xs:w-full xs:text-wrap 
             "
-            text1="ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            text1="Be Part Of our happy Family and see what the left Us Here  "
             text2
             title="Happy Clients :"
           />

@@ -10,6 +10,10 @@ import price1 from "../img/price1.jpg";
 import price2 from "../img/price2.jpg";
 import price4 from "../img/price4.jpeg";
 
+import product1 from "../img/product1.jpg"
+import product2 from "../img/product2.jpg"
+import product3 from "../img/product3.jpg"
+
 import map1 from "../img/map.jpg";
 
 import "swiper/css";
@@ -18,6 +22,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import BarberCard from "./BarberCard";
 import Button from "./Button";
+import Shopnbar from "./Shopnbar";
+import BshopBlog from "../BshopBlog";
 
 function BareberShop() {
   const images = [BarberPerson, BarberPerson2];
@@ -60,6 +66,7 @@ function BareberShop() {
     "
     >
       <div className=" box-border absolute  top-0 left-0  bg-[#1A1A1A]  mx-auto w-screen   min-h-full  -z-10 " />
+      <Shopnbar />
       {/* barbber Team Cards */}
       <div
         className=" min-h-screen  Poppins
@@ -67,7 +74,7 @@ function BareberShop() {
             xs:my-16 xs:flex xs:flex-col xs:gap-y-10
             md:my-16 md:flex md:flex-col md:gap-y-10
             lg:my-16 lg:flex lg:flex-col lg:gap-y-10
-          xl:my-28
+          xl:my-28 
 "
       >
         <h1
@@ -110,7 +117,7 @@ function BareberShop() {
         </div>
       </div>
       {/*  End  of barbber Team Cards */}
-      <div className=" min-h-screen Poppins bg-cyan-800 ">
+      <div className=" min-h-screen Poppins  ">
         <div
           className=" 
           gx:grid gx:grid-cols-1 gx:items-center gx:gap-y-4 gx:my-10 gx:mx-auto 
@@ -130,7 +137,7 @@ function BareberShop() {
             xs:flex xs:flex-col xs:items-center  xs:gap-y-14 
             md:flex md:flex-col md:items-center  md:gap-y-14 
             lg:flex lg:flex-col lg:items-center  lg:gap-y-14 
-           xl:flex xl:flex-col xl:items-center  xl:gap-y-14 
+           xl:flex xl:flex-col xl:items-start  xl:gap-y-14 
            "
           >
             <h1
@@ -141,7 +148,7 @@ function BareberShop() {
              md:text-5xl
               "
             >
-              BarBer's Shop
+              BarBer's School
             </h1>
             <p
               className=" w-[70%] text-left
@@ -163,14 +170,16 @@ function BareberShop() {
 
             <Button
               btnStyle="
-             bg-[#4e524f]  text-white hover:text-slate-400  font-bold   p-4 mt-2  
+             bg-[#4e524f] animate-pulse  text-white hover:text-slate-400  font-bold   p-4 mt-2  
             s:rounded-lg
             gx:rounded-lg
             md:rounded-lg
             lg:rounded-lg
+             
+           
 
              "
-              children="Book Now"
+              children="Enroll  Now"
             />
           </div>
           <div
@@ -229,57 +238,100 @@ function BareberShop() {
         </div>
       </div>
       {/* Find us section */}
+      {/* End of Find us section */}
       <div
-        className=" min-h-screen 
+        className=" min-h-screen  bg-cyan-600/10
        s:h-auto
        xs:my-10
        md:my-40
-       lg:my-40 
+       lg:my-40
+
+       xl:my-40 xl:flex xl:flex-col xl:gap-y-10
    
        "
       >
-        <div
-          className="min-h-screen  Poppins
-            s:my-0 s:flex s:flex-col s:gap-y-3  s:justify-center
-            xs:my-16 xs:flex xs:flex-col xs:gap-y-10
-            md:my-16 md:flex md:flex-col md:gap-y-10
-            lg:my-16 lg:flex lg:flex-col lg:gap-y-10
-          xl:my-32 xl:gap-y-16  "
-        >
-          <h1
-            className=" 
+        <h1
+          className=" 
             s:text-center s:font-bold s:text-3xl  s:flex s:flex-col Poppins
             xs:text-center xs:font-bold xs:text-6xl  xs:flex xs:flex-col 
             md:text-center md:font-bold md:text-6xl  md:flex md:flex-col 
             lg:text-center lg:font-bold lg:text-6xl  lg:flex lg:flex-col 
-            xl:text-left xl:font-bold xl:text-7xl  xl:flex xl:flex-col  "
-          >
-            Find Us :
-          </h1>
+            xl:text-left xl:font-bold xl:text-7xl xl:text-white  xl:flex xl:flex-col  "
+        >
+         Explore our shop :
+        </h1>
+        <div
+          className=" 
+            xl:grid xl:grid-cols-3 xl:items-center "
+        >
+          <div className=" xl:flex xl:flex-col xl:gap-y-2 xl:items-center">
+            <img src={product1} alt="" className=" xl:rounded-xl xl:w-[60%] " />
+            <h1 className=" xl:font-bold xl:text-3xl  text-cyan-500/80 ">Lout name Paste</h1>
+            <p className="xl:font-semibold xl:text-xl xl:w-[50%] xl:text-justify  text-white/80">
+             One of our nice Product here - to provide  you with the best outburst look 
+            </p>
+            <h3 className=" text-4xl font-bold text-green-500">17 £</h3>
+            <Button
+              btnStyle="
+             bg-[#4e524f]   text-white hover:text-slate-400  font-bold   p-4 mt-2  
+            s:rounded-lg
+            gx:rounded-lg
+            md:rounded-lg
+            lg:rounded-lg
+            xl:text-bold xl:text-wide xl:text-3xl
+             "
+              children="More Details "
+            />
+          </div>
+          {/* 2nd card for the other one   */}
+          <div className=" xl:flex xl:flex-col xl:gap-y-2 xl:items-center">
+            <img src={product1} alt="" className=" xl:rounded-xl xl:w-[60%] " />
+            <h1 className=" xl:font-bold xl:text-3xl  text-cyan-500/80 ">Lout name Paste</h1>
+            <p className="xl:font-semibold xl:text-xl xl:w-[50%] xl:text-justify  text-white/80">
+             One of our nice Product here - to provide  you with the best outburst look 
+            </p>
+            <h3 className=" text-4xl font-bold text-green-500">17 £</h3>
+            <Button
+              btnStyle="
+             bg-[#4e524f]   text-white hover:text-slate-400  font-bold   p-4 mt-2  
+            s:rounded-lg
+            gx:rounded-lg
+            md:rounded-lg
+            lg:rounded-lg
+            xl:text-bold xl:text-wide xl:text-3xl
+             "
+              children="More Details "
+            />
+          </div>
+          {/*  */}
 
-          
-          
-            <div className="rounded-xl
-               gx:w-[80%] gx:mt-4 gx:flex gx:flex-col  gx:gap-y-12 gx:mb-4 gx:mx-auto gx:items-center
-              s:w-[80%] s:mt-4 s:flex s:flex-col  s:gap-y-12 s:mb-4 s:mx-auto s:items-center
-              xs:w-[80%] xs:mt-4 xs:flex xs:flex-col  xs:gap-y-12 xs:mb-4 xs:mx-auto xs:items-center
-              md:w-[80%] md:mt-4 md:flex md:flex-col  md:gap-y-12 md:mb-4 md:mx-auto md:items-center
-              lg:w-[80%] lg:mt-4 lg:flex lg:flex-col  lg:gap-y-12 lg:mb-4 lg:mx-auto lg:items-center
+          <div className=" xl:flex xl:flex-col xl:gap-y-2 xl:items-center">
+            <img src={product1} alt="" className=" xl:rounded-xl xl:w-[60%] " />
+            <h1 className=" xl:font-bold xl:text-3xl  text-cyan-500/80 ">Lout name Paste</h1>
+            <p className="xl:font-semibold xl:text-xl xl:w-[50%] xl:text-justify  text-white/80">
+             One of our nice Product here - to provide  you with the best outburst look 
+            </p>
+            <h3 className=" text-4xl font-bold text-green-500">17 £</h3>
+            <Button
+              btnStyle="
+             bg-[#4e524f]   text-white hover:text-slate-400  font-bold   p-4 mt-2  
+            s:rounded-lg
+            gx:rounded-lg
+            md:rounded-lg
+            lg:rounded-lg
+            xl:text-bold xl:text-wide xl:text-3xl
+             "
+              children="More Details "
+            />
+          </div>
+          {/*  */}
 
-
-
-            xl:w-[45%] xl:mt-4 xl:flex  xl:gap-x-12 xl:items-center   ">
-              <img src={map1} alt="" className=" rounded-xl" />
-              <img src={map1} alt="" className="rounded-xl" />
-
-            
+          <div>
+            <BshopBlog />
           </div>
         </div>
-      </div>{" "}
-       {/* End of Find us section */}
-
-      <div className=" min-h-screen bg-cyan-400 "></div>
-      Our Barber shop
+      </div>
+     
     </div>
   );
 }

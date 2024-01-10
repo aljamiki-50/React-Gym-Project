@@ -30,10 +30,12 @@ function Video() {
   };
   return (
     <div className="  ring-[1px] ring-slate-100  ">
-      <div className="app__video  relative  mx-auto 
+      <div
+        className="app__video  relative  mx-auto 
        s:text-center    gx:text-center
 
-        ">
+        "
+      >
         <video
           className=" object-cover
            lg:w-screen lg:container
@@ -49,15 +51,20 @@ function Video() {
         />
         <div className="app__video-overlay  items-center flex__center">
           <div
-            className="app__video-overlay_circle    absolute  top-[40%]   right-[40%] bg-transparent ring-1 ring-slate-400  p-10 rounded-full  flex__center
+            className="app__video-overlay_circle cursor-pointer group transition-all  ease-in-out    absolute opacity-0 hover:opacity-90  top-[45%]   right-[45%] bg-transparent ring-1 ring-slate-400  p-10 rounded-full  flex__center
                  s:p-1 gx:p-1
             "
             onClick={handleVid}
           >
             {playvideo ? (
-              <BsPauseFill color="#fff" fontSize={30} />
+              <div className=" opacity-0  group-hover:opacity-90 ">
+                {" "}
+                <BsPauseFill color="#fff" fontSize={30} />
+              </div>
             ) : (
-              <BsPlayFill color="#fff" fontSize={30} />
+              <div className="   opacity-0 group-hover:opacity-90 ">
+                <BsPlayFill color="#fff" fontSize={30} />
+              </div>
             )}
           </div>
         </div>
