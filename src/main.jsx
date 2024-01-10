@@ -32,7 +32,7 @@ import Bshop from "./components/Bshop.jsx";
 import BshopBlog from "./BshopBlog.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <>
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
@@ -59,5 +59,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </Route>
       </Routes>
     </Router>
-  </React.StrictMode>
+  </>
 );
