@@ -67,7 +67,7 @@ function Nbar() {
       >
         <div>
           <Link to="/">
-          <img src={bob} className="  w-[80px] h-[80px] ring-2 ring-white  rounded-[100%] object-fit text-center "   alt="" />
+          <img src={Logo} className="  w-[80px] h-[80px] ring-2 ring-white  rounded-[100%] object-fit text-center "   alt="" />
           </Link>
         </div>
 
