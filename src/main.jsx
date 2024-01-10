@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createRoot } from "react-dom/client";
 
-
 // import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -18,8 +17,7 @@ import NewsBlogs from "./components/NewsBlogs.jsx";
 import Footer from "./components/Footer.jsx";
 import Layout from "./components/Layout.jsx";
 import Test from "./test.jsx";
-import testlight from "./testlight.jsx";
-import TestLight from "./testlight.jsx";
+
 import ServicesLight from "./ServicesLight.jsx";
 import NewsBlogLight from "./NewsBlogLight.jsx";
 import AboutUsLight from "./components/AboutUsLight.jsx";
@@ -38,26 +36,16 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        {/* <Route path="/" element={<App />} /> */}
-        {/* <Route path="/Services" element={<Services />} />
-        <Route path="/Packages" element={<Packages />} />
-        <Route path="/AboutUs" element={<AboutUs />} /> */}
-        {/* <Route path="/OurLocation" element={<OurLocation />} /> */}
-        {/* <Route path="/NewsBlogs" element={<NewsBlogs />} /> */}
-        {/* <Route path="/Footer" element={<Footer />} /> */}
-
         <Route path="/" element={<App />} />
         <Route path="/BareberShop" element={<BareberShop />} />
-
         <Route element={<Bshoplayout />}>
           <Route path="/BareberShop" element={<BareberShop />} />
           <Route path="/BshopFindus" element={<BshopFindus />} />
           <Route path="/BshopServices" element={<BshopServices />} />
           <Route path="/BshopAboutUs" element={<BshopAboutUs />} />
           <Route path="/Bshop" element={<Bshop />} />
-          <Route path="/BshopBlog" element={<BshopBlog/>} />
+          <Route path="/BshopBlog" element={<BshopBlog />} />
         </Route>
-
         <Route element={<Layout />}>
           {/* <Route path=":test" element={<Test/>}/> */}
           <Route path="/price" element={<Prices />} />
