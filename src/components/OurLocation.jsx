@@ -7,7 +7,7 @@ import { GrLocation } from "react-icons/gr";
 function OurLocation() {
   return (
     <div
-      className="  box-border container mx-auto   min-h-screen
+      className="  box-border container mx-auto       min-h-screen
      s:mt-[20%]
      lg:mt-[10%]
       xl:mt-[10%]

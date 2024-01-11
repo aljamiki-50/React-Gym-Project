@@ -58,8 +58,10 @@ function Nbar() {
   ];
 
   return (
-    <div className="   container w-screen  lg:fixed xl:fixed   lg:mt-6    xl:z-20 top-0  
-      xl:mt-6
+    <div className="   container w-full   xl:z-20 top-0   mx-auto 
+     
+    lg:fixed    lg:mt-6
+    xl:mt-6 xl:fixed
        ">
       <div
         className="    flex flex-row  items-center justify-between   text-center
@@ -91,28 +93,28 @@ function Nbar() {
           <li
             className=" list-none absolute right-2
            gx:right-20 gx:translate-x-12 gx:scale-150 
-           s:right-10 s:translate-x-0  s:scale-125 
+           s:right-10 s:translate-x-0  s:scale-[1.7] 
         
            xs:right-20  xs:scale-150
            md:right-36   md:scale-[1.8]
             "
             onClick={swap}
           >
-            {click ? <FaTimes /> : <FaBarsStaggered />}
+            {click ? <FaTimes  /> : <FaBarsStaggered />}
           </li>
         )}
         <ul
           className={`${
-            click ? "slide-in  " : "slide-out "
-          } absolute  mt-[68px] right-0 top-0 w-[100%] z-20    flex flex-col   gap-y-24 pt-10 bg-[#1A1A1A] hover:bg-black hover:text-white text-center`}
+            click ? "slide-in" : "slide-out "
+          } absolute    right-0 top-10 w-[100%] z-20  rounded-xl min-h-full     flex flex-col   gap-y-24 pt-10 bg-[#1A1A1A]  hover:text-white text-center justify-start`}
           style={{ height: `${height}px` }}
         >
           {List.map((li) => (
-            <Link to={li.path}>
+            <Link to={li.path} className=" s:mt-8">
               <LinksNbar
                 path={li.path}
                 children={li.name}
-                btnStyle="  bg-transparent  btn btn-light text-light "
+                btnStyle="   text-4xl font-bold Poppins text-left "
                 onClick={closeMobileMenue}
               />
             </Link>

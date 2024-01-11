@@ -11,7 +11,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className=' flex flex-col  '>
+    <div className='    '>
      <Nbar/>
      <HeroSec/>
      {/* <ServicesLight/> */}

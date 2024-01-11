@@ -16,7 +16,6 @@ function Video() {
     const videoElement = videRef.current;
     const Sign = document.getElementsByClassName("app__video-overlay_circle");
 
-    console.log(Sign);
 
     if (videoElement) {
       if (playvideo) {
@@ -29,18 +28,16 @@ function Video() {
     }
   };
   return (
-    <div className="  ring-[1px] ring-slate-100  ">
+    <div className="  ring-[1px] ring-slate-100    ">
       <div
         className="app__video  relative  mx-auto 
-       s:text-center    gx:text-center
+       s:text-center  gx:text-center
 
         "
       >
         <video
-          className=" object-cover
-           lg:w-screen lg:container
-           xl:w-screen xl:h-screen  
-
+          className=" object-cover  
+             xl:w-full
             "
           src={vid}
           type="video/mp4"

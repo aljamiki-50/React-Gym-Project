@@ -110,7 +110,7 @@ function DarNavBar() {
         <ul
           className={`${
             click ? "slide-in  " : "slide-out "
-          } absolute  mt-[110px] right-0 top-0 w-[100%] z-20    flex flex-col    gap-y-24 pt-10 bg-[#1A1A1A] hover:bg-black hover:text-white text-center`}
+          } absolute    right-0 top-10 w-[100%] z-20  rounded-xl min-h-full     flex flex-col   gap-y-24 pt-10 bg-[#1A1A1A]  hover:text-white text-center justify-start`}
           style={{ height: `${height}px` }}
         >
           {List.map((li) => (
