@@ -55,7 +55,7 @@ function DarNavBar() {
 
   return (
     <div
-      className="   container w-screen xl:fixed  z-10 top-0  
+      className="    container mx-auto w-screen xl:fixed  z-10 top-0  
         py-4 rounded-xl px-2 bg-[#1A1A1A] 
         lg:fixed   lg:mt-6    
         xl:mt-2 xl:px-10
@@ -118,7 +118,7 @@ function DarNavBar() {
               <LinksNbar
                 path={li.path}
                 children={li.name}
-                btnStyle="  bg-transparent  btn btn-light text-light "
+                btnStyle=" text-4xl font-bold Poppins text-left "
                 onClick={closeMobileMenue}
               />
             </Link>

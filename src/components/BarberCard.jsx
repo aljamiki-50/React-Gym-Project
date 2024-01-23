@@ -7,7 +7,7 @@ import Button from "./Button";
 function BarberCard({ Image, Name }) {
   return (
     <div
-      className="w-[100%]
+      className="w-[100%] mx-auto
       mb-10
          xs:gap-y-10 
          md:gap-y-10 
@@ -16,8 +16,10 @@ function BarberCard({ Image, Name }) {
           "
     >
       {" "}
-      <div className="  p
-      xl:flex   xl:justify-evenly xl:items-center">
+      <div className="   
+      
+
+      xl:flex   xl:justify-evenly xl:items-center  ">
         {" "}
         <p className="w-[40%] hidden xl:flex  xl:font-bold xl:text-justify  ">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
@@ -27,7 +29,7 @@ function BarberCard({ Image, Name }) {
           adipisci debitis nemo, accusamus sint magni delectus vero, sequi animi
           corporis eius unde.
         </p>
-        <img src={Image} alt="" className="xl:w-[20%] rounded-xl" />
+        <img src={Image} alt="" className="xl:w-[20%] s:w-[80%] xs:w-[50%]  mx-auto  rounded-xl" />
       </div>
       <h1 className=" text-2xl font-bold"> {Name}</h1>
       <Button

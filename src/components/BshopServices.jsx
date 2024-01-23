@@ -6,7 +6,7 @@ import price4 from "../img/price4.jpeg";
 function BshopServices() {
   return (
     <div
-      className=" min-h-screen 
+      className=" min-h-screen  bg-red-500 mx-auto
    s:h-auto
    xs:my-10
    md:my-40

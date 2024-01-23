@@ -67,6 +67,8 @@ function BshopAboutUs() {
          
          
          hidden
+          s:flex
+          xs:flex  
           xs:mt-4
            xl:flex xl:mt-4"
       >

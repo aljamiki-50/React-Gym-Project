@@ -20,14 +20,14 @@ function NewsBlogs() {
             title="News & Blogs"
           />
         </div>
-        <div className=" grid grid-cols-3 ml-28 items-center  ">
-          <div>
+        <div className=" grid grid-cols-3 ml-28    ">
+
             <NewsBlogsCads
               title="How to bulk properly?"
               link="Read More"
               img={news1}
             />
-          </div>
+         
 
           <NewsBlogsCads
             title="Intermittent fasting:

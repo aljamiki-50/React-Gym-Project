@@ -57,7 +57,7 @@ function OurLocation() {
             className=" font-bold flex gap-x-3 text-6xl text-centers items-center mx-auto tracking-wider 
 
             gx:text-3xl
-            s:text-3xl  s:text-center s:tracking-wider
+            s:text-3xl  s:text-center s:tracking-wider  s:items-center s:font-mono 
             xs:text-6xl xs:text-center xs:tracking-wider
             md:text-6xl md:text-center md:tracking-wider
              lg:flex lg:gap-x-3 lg:text-6xl lg:text-center lg:items-center lg:mx-auto lg:tracking-wider
@@ -66,7 +66,7 @@ function OurLocation() {
            "
           >
             Our <span className=" xs:hidden lg:hidden"> location </span>
-            <span className=" hidden     gx:flex s:flex  lg:flex justify-center mt-5 gx:mb-2  text-cyan-400 items-center ">
+            <span className=" hidden     gx:flex s:flex  lg:flex justify-center text-center mt-5 s:mt-0  gx:mb-2  text-cyan-400  ">
               <GrLocation />
             </span>
           </h1>

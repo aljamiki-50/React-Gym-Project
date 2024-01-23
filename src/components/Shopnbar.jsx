@@ -20,10 +20,10 @@ function Shopnbar() {
   function btnOff() {
     if (window.innerWidth <= 960) {
       setButtonStatus(false);
-      console.log(window.innerWidth);
+      // console.log(window.innerWidth);
     } else {
       setButtonStatus(true);
-      console.log("it's been set to true");
+      // console.log("it's been set to true");
     }
   }
   useEffect(() => {
@@ -94,7 +94,7 @@ function Shopnbar() {
           <li
             className=" list-none absolute right-2
            gx:right-20 gx:translate-x-12 gx:scale-150 
-           s:right-10 s:translate-x-0  s:scale-125  p-10 
+           s:right-10 s:translate-x-0  s:scale-150  p-10 
         
            xs:right-20  xs:scale-150
            md:right-36   md:scale-[1.8] z-10
@@ -107,7 +107,7 @@ function Shopnbar() {
         <ul
           className={`${
             click ? "slide-in  " : "slide-out "
-          } absolute  mt-[100px] right-0 top-0 w-[100%]  z-20    flex flex-col   gap-y-24 pt-10 bg-[#1A1A1A] hover:bg-black hover:text-white text-center`}
+          } absolute  mt-[220px]   right-0 top-0 w-[100%]  z-20    flex flex-col  min-h-full rounded-xl  gap-y-24 pt-20 bg-[#1A1A1A] hover:bg-black hover:text-white text-center`}
           style={{ height: `${height}px` }}
         >
           {List.map((li) => (
@@ -115,7 +115,7 @@ function Shopnbar() {
               <LinksNbar
                 path={li.path}
                 children={li.name}
-                btnStyle="  bg-transparent  btn btn-light text-light "
+                btnStyle="bg-white p-4 rounded-xl font-bold Poppins hover:text-slate-300"
                 onClick={closeMobileMenue}
               />
             </Link>

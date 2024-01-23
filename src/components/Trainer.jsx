@@ -93,7 +93,7 @@ function Trainer({ practions }) {
           name="
 
           Simon Mercer"
-          role="Gym Manager / Director"
+          role="Gym Trainer"
           Qualification="- 10+ years of gym experience
           - BSc Sports Science
           - Gym Instruction

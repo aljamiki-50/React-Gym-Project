@@ -12,7 +12,7 @@ function ServicesLight() {
 
   return (
     <div
-      className=" box-border container mx-auto  w-screen
+      className=" box-border container mx-auto  w-screen min-h-dvh  mt-10
     gx:grid gx:grid-cols-1 gx:gap-y-3 
      s:grid s:grid-cols-1 s:gap-y-3  
     lg:mb-[400px] lg:mt-[12%]
@@ -20,14 +20,16 @@ function ServicesLight() {
 
       "
     >
-      <div className=" absolute top-0 left-0 bg-slate-200 w-screen   -z-10" />
+      <div className=" absolute top-0 left-0 bg-slate-200/60 w-screen min-h-full   -z-10 
+
+      " />
       <ExploreText
         text1=" Unleash your potential in our state-of-the-art facility, equipped
     with"
         text2=" top-notch equipment and expert trainers. Join us on a journey to."
         title=" Explore Our Services"
-        h1Style="text-4xl  text-black font-semibold   tracking-wide "
-        p1Style="text-black"
+        h1Style="text-4xl  text-black font-semibold   tracking-wide  font-[ui-sans-serif]"
+        p1Style="text-black font-sans"
       />
      
       <div
