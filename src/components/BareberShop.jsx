@@ -1,5 +1,7 @@
 import React from "react";
+// import barber1 from "../img/barber1.jpg";
 import barber1 from "../img/barber1.jpg";
+
 import AboutSwiper from "./AboutSwiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
@@ -10,9 +12,9 @@ import price1 from "../img/price1.jpg";
 import price2 from "../img/price2.jpg";
 import price4 from "../img/price4.jpeg";
 
-import product1 from "../img/product1.jpg"
-import product2 from "../img/product2.jpg"
-import product3 from "../img/product3.jpg"
+import product1 from "../img/product1.jpg";
+import product2 from "../img/product2.jpg";
+import product3 from "../img/product3.jpg";
 
 import map1 from "../img/map.jpg";
 
@@ -258,7 +260,7 @@ function BareberShop() {
             lg:text-center lg:font-bold lg:text-6xl  lg:flex lg:flex-col 
             xl:text-left xl:font-bold xl:text-7xl xl:text-white  xl:flex xl:flex-col  "
         >
-         Explore our shop :
+          Explore our shop :
         </h1>
         <div
           className=" 
@@ -266,9 +268,12 @@ function BareberShop() {
         >
           <div className=" xl:flex xl:flex-col xl:gap-y-2 xl:items-center">
             <img src={product1} alt="" className=" xl:rounded-xl xl:w-[60%] " />
-            <h1 className=" xl:font-bold xl:text-3xl  text-cyan-500/80 ">Lout name Paste</h1>
+            <h1 className=" xl:font-bold xl:text-3xl  text-cyan-500/80 ">
+              Lout name Paste
+            </h1>
             <p className="xl:font-semibold xl:text-xl xl:w-[50%] xl:text-justify  text-white/80">
-             One of our nice Product here - to provide  you with the best outburst look 
+              One of our nice Product here - to provide you with the best
+              outburst look
             </p>
             <h3 className=" text-4xl font-bold text-green-500">17 £</h3>
             <Button
@@ -286,9 +291,12 @@ function BareberShop() {
           {/* 2nd card for the other one   */}
           <div className=" xl:flex xl:flex-col xl:gap-y-2 xl:items-center">
             <img src={product1} alt="" className=" xl:rounded-xl xl:w-[60%] " />
-            <h1 className=" xl:font-bold xl:text-3xl  text-cyan-500/80 ">Lout name Paste</h1>
+            <h1 className=" xl:font-bold xl:text-3xl  text-cyan-500/80 ">
+              Lout name Paste
+            </h1>
             <p className="xl:font-semibold xl:text-xl xl:w-[50%] xl:text-justify  text-white/80">
-             One of our nice Product here - to provide  you with the best outburst look 
+              One of our nice Product here - to provide you with the best
+              outburst look
             </p>
             <h3 className=" text-4xl font-bold text-green-500">17 £</h3>
             <Button
@@ -307,9 +315,12 @@ function BareberShop() {
 
           <div className=" xl:flex xl:flex-col xl:gap-y-2 xl:items-center">
             <img src={product1} alt="" className=" xl:rounded-xl xl:w-[60%] " />
-            <h1 className=" xl:font-bold xl:text-3xl  text-cyan-500/80 ">Lout name Paste</h1>
+            <h1 className=" xl:font-bold xl:text-3xl  text-cyan-500/80 ">
+              Lout name Paste
+            </h1>
             <p className="xl:font-semibold xl:text-xl xl:w-[50%] xl:text-justify  text-white/80">
-             One of our nice Product here - to provide  you with the best outburst look 
+              One of our nice Product here - to provide you with the best
+              outburst look
             </p>
             <h3 className=" text-4xl font-bold text-green-500">17 £</h3>
             <Button
@@ -331,7 +342,6 @@ function BareberShop() {
           </div>
         </div>
       </div>
-     
     </div>
   );
 }
